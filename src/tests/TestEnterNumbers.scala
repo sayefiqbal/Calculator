@@ -1,6 +1,5 @@
 package tests
 
-import calculator.controller.NumberAction
 import calculator.model.Calculator
 import org.scalatest.FunSuite
 
@@ -16,9 +15,9 @@ class TestEnterNumbers extends FunSuite {
   test("Enter Numbers Test") {
     val calculator: Calculator = new Calculator()
 
-    new NumberAction(calculator, 1).handle(null)
-    new NumberAction(calculator, 2).handle(null)
-    new NumberAction(calculator, 5).handle(null)
+    calculator.numberPressed(1)
+    calculator.numberPressed(2)
+    calculator.numberPressed(5)
 
     assert(equalDoubles(calculator.displayNumber(), 125.0), calculator.displayNumber())
   }
