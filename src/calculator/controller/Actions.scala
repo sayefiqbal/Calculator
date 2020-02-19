@@ -5,13 +5,8 @@ import javafx.event.{ActionEvent, EventHandler}
 
 /**
   * EventHandlers for each of the button on the calculator. NumberAction takes
-  * an Int representing the which number button was pressed. Implement each of
-  * these handle methods to call the appropriate method in your Calculator API.
-  * You may assume that each of these classes has a reference to the same
-  * Calculator object
-  *
-  * For testing use only these classes to ensure your tests will run with the
-  * submissions on the server
+  * an Int representing the which number button was pressed. You may assume
+  * that each of these classes has a reference to the same Calculator object.
   */
 
 class EqualAction(calculator: Calculator) extends EventHandler[ActionEvent] {
