@@ -3,10 +3,15 @@ package calculator.model
 
 class Calculator() {
 
+  var dN: Double = 0.0
+  var lhs: Int = 0
+  var rhs: Int = 0
+  var state: State = new Clear(this)
+
   // Accessed by View. You should edit this method as you build functionality
   def displayNumber(): Double = {
     // TODO
-    0.0
+    dN
   }
 
   def clearPressed(): Unit = {
